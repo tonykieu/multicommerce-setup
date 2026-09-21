@@ -1,8 +1,8 @@
 #!/usr/bin/env bash
 # MultiCommerce server bootstrap — prepares SQLite data dirs, env, deps, and build.
-# Usage (private repo — clone or scp this file; raw GitHub curl URLs return 404):
-#   git clone -b feat/catalog-database-settings https://github.com/tonykieu/multicommerce.git /opt/multicommerce
-#   ./scripts/setup-server.sh --dir /opt/multicommerce --skip-clone --start
+# Usage:
+#   curl -fsSL https://raw.githubusercontent.com/tonykieu/multicommerce-setup/main/setup-server.sh | bash -s -- --dir /opt/multicommerce --start
+#   ./scripts/setup-server.sh --dir /opt/multicommerce --start
 set -euo pipefail
 
 REPO_URL="${REPO_URL:-https://github.com/tonykieu/multicommerce.git}"
